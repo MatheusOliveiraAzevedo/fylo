@@ -1,38 +1,32 @@
+:root {
+  --fundoEmail: hsl(217, 28%, 15%);
+  --fundoPrincipal: hsl(218, 28%, 13%);
+  --fundoRodape: hsl(216, 53%, 9%);
+  --fundoDepoimentos: hsl(219, 30%, 18%);
+
+  --corLinksSelecionado: hsl(176, 68%, 64%);
+  --corMidia-Botoes: hsl(198, 60%, 50%);
+  --corErroEmail: hsl(0, 100%, 63%);
+
+  --branco: hsl(0, 0%, 100%);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background-color: var(--fundoDepoimentos);
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--branco);
+
+  /* font-family: 'Raleway', sans-serif; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blocoDepoimentos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--fundoPrincipal);
+  padding: 30px;
 }

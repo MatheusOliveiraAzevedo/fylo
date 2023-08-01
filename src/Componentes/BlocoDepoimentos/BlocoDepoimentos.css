@@ -1,0 +1,19 @@
+
+.cardsDepoimentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+    background-image: url(../../Images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 35px 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .cardsDepoimentos {
+        flex-direction: column;
+        margin-bottom: 270px;
+
+    }
+}

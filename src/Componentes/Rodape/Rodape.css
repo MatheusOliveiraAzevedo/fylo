@@ -1,0 +1,150 @@
+
+.blocoRodape {
+    width: 100vw;
+    background-color: var(--fundoRodape);
+    display: grid;
+    justify-items: center;
+    padding-top: 250px;
+    padding-bottom: 80px;
+}
+
+.rodape {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+
+.rodape .logoRodape {
+    grid-column: span 3;
+}
+
+.rodape .contatos {
+    height: 80px;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 5% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
+}
+
+.rodape .contatos .local {
+    grid-row: span 2;
+    width: 350px;
+    text-align: start;
+    align-self: self-start;
+}
+
+.rodape .contatos img {
+    grid-row: span 2;
+    align-self: self-start;
+    margin-right: 15px;
+}
+
+.rodape .contatos .telefone {
+    grid-row: span 1;
+    align-self: self-start;
+    margin-left: 20px;
+}
+
+.rodape .contatos .contatoEmail {
+    grid-row: span 1;
+    align-self: self-start;
+    margin-left: 20px;
+}
+
+.menuRodape .listaRodape {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+    width: 300px;
+    align-items: center;
+}
+.menuRodape .listaRodape a {
+    text-decoration: none;
+    color: inherit;
+}
+.menuRodape .listaRodape li {
+    margin: 10px;
+    width: 100px;
+}
+
+
+.midias {
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--branco);
+    padding-top: 20px;
+}
+
+.midias img {
+    width: 20%;
+}
+
+@media screen and (max-width: 1080px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .rodape .logoRodape {
+        width: 60%;
+        margin: 0 0 20px 10px;
+    }
+    
+    .rodape .contatos {
+        display: grid;
+        grid-template-columns: 5% 1fr;
+        height: 160px;
+    }
+    .rodape .contatos img {
+        grid-row: span 1;
+    }
+
+    .rodape .contatos .local {
+        grid-column: span 1;
+        height: 10vh;
+        width: 90%;
+        grid-row: span 1;
+        margin-left: 20px;
+    }
+    .rodape .contatos .telefone {
+        grid-column: span 2;
+        height: 5vh;
+        width: 100%;
+        text-align: start;
+        margin: 0;
+    }
+    .rodape .contatos .contatoEmail {
+        height: 5vh;
+        width: 100%;
+        grid-column: span 2;
+        text-align: start;
+        margin: 0;
+    }
+
+    .rodape .menuRodape .listaRodape {
+        padding: 0;
+        height: 300px;
+        width: 100%;
+        justify-content: space-between;
+        text-align: start;
+        align-items: start;
+    }
+
+
+    .rodape .midias {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rodape .midias img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px 0 5px;
+    }
+}

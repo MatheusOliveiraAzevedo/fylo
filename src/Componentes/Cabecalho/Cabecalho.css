@@ -1,0 +1,17 @@
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    padding: 70px 60px;
+}
+
+@media screen and (max-width: 1080px) {
+    .cabecalho {
+        grid-template-columns: 1fr 50%;
+        padding: 30px 20px;
+    }
+
+    .cabecalho img {
+        width: 50%;
+    }
+}

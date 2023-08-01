@@ -1,0 +1,51 @@
+.depoimento {
+    width: 28%;
+    background-color: var(--fundoDepoimentos);
+    box-shadow: 5px 5px 5px hsla(219, 30%, 18%, 0.624);
+    padding: 20px;
+    margin-bottom: 300px;
+}
+
+.depoimento .textoDepoimento {
+    text-align: start;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 1fr 90%;
+    grid-template-rows: 1fr 1fr;
+    height: 30px;
+    align-items: center;
+}
+
+.depoimento .perfil img {
+    width: 90%;
+    border-radius: 25px;
+    grid-row: span 2;
+    margin: 0;
+
+}
+
+.depoimento .perfil h6 {
+    grid-row: span 1;
+    margin: 0;
+    font-size: 10px;
+    text-align: start;
+    margin-left: 5px;
+}
+
+.depoimento .perfil p {
+    grid-row: span 1;
+    margin: 0 0 0 5px;
+    font-size: 8px;
+    text-align: start;
+    
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .depoimento {
+        width: 70vw;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,169 @@
+
+
+.container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 60px;
+    width: 100%;
+    align-self: center;
+}
+
+.container div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 60px;
+    width: 100%;
+    align-self: center;
+}
+
+.containerImagem {
+    background-image: url(../../Images/bg-curvy-mobile.svg);
+    background-size: 130% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 150px;
+}
+
+
+.containerImagem2 {
+    background-color: var(--fundoPrincipal);
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerImagem2 div {
+    justify-items: start;
+    text-align: start;
+}
+
+.imagem2 {
+
+}
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.titulo2 {
+
+}
+
+
+.texto {
+    font-weight: 400;
+    margin: 0;
+    width: 70%;
+}
+
+.texto2 {
+
+}
+
+.botao {
+    border: none;
+    background-color: var(--corMidia-Botoes);
+    color: var(--branco);
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 10px 60px;
+    grid-column: span 2;
+}
+.botao:hover {
+    background-color: var(--corLinksSelecionado);
+}
+
+.botao2 {
+    background-color: inherit;
+    color: var(--corLinksSelecionado);
+    padding: 0;
+    border-bottom: 2px solid var(--corLinksSelecionado);
+    border-radius: 0;
+    align-self: center;
+    grid-column: span 1;
+}
+
+.botao2:hover {
+    background-color: inherit;
+    color: var(--branco);
+    border-bottom: 2px solid var(--branco);
+}
+
+.botaoSeta {
+    width: 20px;
+}
+
+.container div label {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container div label img {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    .imagem {
+        width: 80%;
+    }
+
+    .titulo {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .titulo2 {
+        text-align: start;
+        margin-left: 25px;
+    }
+
+    .texto {
+        width: 85%;
+    }
+
+    .texto2 {
+        text-align: start;
+        margin-bottom: 15px;
+    }
+
+    .botao {
+        width: 70vw;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+
+    .botao2 {
+        border-radius: 0;
+        height: 20px;
+        width: 200px;
+        font-weight: 400;
+    }
+    .container div {
+        /* padding-bottom: 0; */
+    }
+
+    .containerImagem {
+        padding-bottom: 0;
+    }
+
+    .containerImagem2 {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .containerImagem2 div {
+    justify-items: center;
+    text-align: center;
+    }
+
+    .containerImagem2 div label {
+        margin: 10px 0 0 30px;
+    }
+    
+
+
+
+}

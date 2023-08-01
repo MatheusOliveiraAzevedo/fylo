@@ -1,0 +1,39 @@
+
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .imgCard {
+    width: 20%;
+    margin: 10px;
+}
+
+.card .tituloCard {
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}
+
+.card .textoCard {
+    margin: 0;
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .card {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .card .imgCard {
+        width: 25%;
+    }
+}

@@ -1,0 +1,24 @@
+
+.beneficios {
+    width: 100%;
+    padding: 0px 0 40px 0;
+    background-color: var(--fundoPrincipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBeneficios {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .containerBeneficios {
+        width: 80%;
+    }
+}
